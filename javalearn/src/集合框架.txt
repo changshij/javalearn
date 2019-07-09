@@ -1,0 +1,11 @@
+--------------------------------
+Map集合：
+特点：1，存储的都是键值对；2，要保证键的唯一性。
+
+存的方式：put(key, value);
+取的方式：keySet();entrySet();values();原理：就是将map集合装换成set集合或者Collection集合。
+
+Map
+  |--Hashtable：哈希表结果，同步的。null不可以作为键和值。
+  |--HashMap：哈希表结构，不同步。替代了Hashtable。允许null作为键和值。
+  |--TreeMap：二叉树结构，不同步的，可以对map集合中的键进行排序。
